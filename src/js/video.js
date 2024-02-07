@@ -5,7 +5,7 @@
 /**
  * @typedef { string } version
  */
-import {version} from '../../package.json';
+import { version } from '../../package.json';
 import window from 'global/window';
 import {
   hooks_,
@@ -282,7 +282,7 @@ videojs.getPlayer = (id) => {
   }
 
   if (Dom.isEl(tag)) {
-    const {player, playerId} = tag;
+    const { player, playerId } = tag;
 
     // Element may have a `player` property referring to an already created
     // player instance. If so, return that.
@@ -444,7 +444,7 @@ videojs.addLanguage = function(code, data) {
 
   videojs.options.languages = Obj.merge(
     videojs.options.languages,
-    {[code]: data}
+    { [code]: data }
   );
 
   return videojs.options.languages[code];

@@ -5435,7 +5435,8 @@ Player.prototype.options_ = {
   audioOnlyMode: false,
   audioPosterMode: false,
   // Default smooth seeking to false
-  enableSmoothSeeking: false
+  enableSmoothSeeking: false,
+  autoplay: true
 };
 
 TECH_EVENTS_RETRIGGER.forEach(function(event) {
